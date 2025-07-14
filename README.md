@@ -21,8 +21,7 @@ Key Features
 
 ⚡ Real-time Capable: Inference in 0.12 seconds per prediction
 
-Model Architecture
-https://docs/s_dgnn_architecture.png
+
 
 The S-DGNN model consists of two main components:
 
@@ -107,36 +106,7 @@ Input: Sequence of station entry flows (4 × 15-min intervals)
 
 Output: Predicted passenger flow at 4 transfer stations (next 15-min)
 
-Directory Structure
-text
-metro-flow-prediction/
-├── data/                   # Data files
-│   ├── metro_network.json  # Metro topology
-│   ├── afc_data.csv        # AFC data
-│   └── processed/          # Preprocessed data
-├── model/                  # Model implementations
-│   ├── dgnn.py             # Directed Graph Neural Network
-│   ├── s_dgnn.py           # S-DGNN main model
-│   └── prophet_wrapper.py  # Prophet correlation prediction
-├── utils/                  # Utility modules
-│   ├── graph_builder.py    # Graph construction
-│   ├── data_loader.py      # Data loading
-│   └── metrics.py          # Evaluation metrics
-├── config.py               # Configuration
-├── train.py                # Model training
-├── test.py                 # Model testing
-└── visualize.py            # Visualization
-References
-Cui D., Zhang Z., Sun T. (2024). Prediction and Warning Method for Large Passenger Flow in Metro Transfer Stations Based on Spatial and Temporal Characteristics of Personnel Trajectories
 
-Li Y., et al. (2017). Diffusion Convolutional Recurrent Neural Network: Data-driven Traffic Forecasting. arXiv:1707.01926
-
-Guo S., et al. (2019). Attention Based Spatial-Temporal Graph Convolutional Networks for Traffic Flow Forecasting. AAAI
-
-Zhou R., et al. (2021). Research on Traffic Situation Analysis for Urban Road Network Through Spatiotemporal Data Mining. IEEE Access
-
-License
-This project is licensed under the MIT License - see the LICENSE file for details.
 
 
 
