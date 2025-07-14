@@ -1,4 +1,3 @@
-# Metro-Passenger-Flow-Prediction-with-S-DGNN
 Metro Passenger Flow Prediction with S-DGNN
 Project Overview
 This project implements the Sequence Directed Graph Neural Network (S-DGNN) model for predicting passenger flow at metro transfer stations, based on the research paper:
