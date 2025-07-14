@@ -9,19 +9,20 @@ Chinese Institute of Coal Science, China University of Mining and Technology
 The model leverages spatial-temporal characteristics of passenger trajectories to predict transfer station flows with over 90% accuracy, enabling early warning systems for large passenger flow risks.
 
 Key Features
- Transfer-Centric Topology: Novel graph structure focusing on transfer stations
+🚇 Transfer-Centric Topology: Novel graph structure focusing on transfer stations
 
- Time Delay Modeling: Accounts for travel time between stations
+⏳ Time Delay Modeling: Accounts for travel time between stations
 
- S-DGNN Architecture: Combines Directed Graph Neural Networks with Gated Recurrent Units
+📈 S-DGNN Architecture: Combines Directed Graph Neural Networks with Gated Recurrent Units
 
- High Accuracy: Achieves >90% prediction accuracy on transfer station flows
+📊 High Accuracy: Achieves >90% prediction accuracy on transfer station flows
 
- Scenario-Specific Models: Separate training for weekday and weekend patterns
+🏙️ Scenario-Specific Models: Separate training for weekday and weekend patterns
 
- Real-time Capable: Inference in 0.12 seconds per prediction
+⚡ Real-time Capable: Inference in 0.12 seconds per prediction
 
-
+Model Architecture
+https://docs/s_dgnn_architecture.png
 
 The S-DGNN model consists of two main components:
 
@@ -58,21 +59,19 @@ fbprophet (for correlation prediction)
 
 
 
-
-Model Training
 Train the S-DGNN model:
 
-bash
+
 python train.py
 Evaluation
 Test model performance:
 
-bash
+
 python test.py
 Visualization
 Generate topology and flow pattern visualizations:
 
-bash
+
 python visualize.py
 Results
 Performance Metrics
@@ -81,21 +80,19 @@ Weekday	11.86	19.13	22.38	92.76%
 Weekend	13.02	22.45	25.17	86.59%
 Extreme	14.87	25.31	29.84	83.84%
 
-
-
 Key Implementation Details
 Metro Topology
 84 general stations + 4 transfer stations
 
 4 metro lines with interconnections:
 
-Line 1  Line 2 at T1
+Line 1 ↔ Line 2 at T1
 
-Line 2  Line 3 at T2
+Line 2 ↔ Line 3 at T2
 
-Line 3  Line 4 at T3
+Line 3 ↔ Line 4 at T3
 
-Line 4  Line 1 at T4
+Line 4 ↔ Line 1 at T4
 
 Graph Structure
 python
@@ -137,3 +134,9 @@ Li Y., et al. (2017). Diffusion Convolutional Recurrent Neural Network: Data-dri
 Guo S., et al. (2019). Attention Based Spatial-Temporal Graph Convolutional Networks for Traffic Flow Forecasting. AAAI
 
 Zhou R., et al. (2021). Research on Traffic Situation Analysis for Urban Road Network Through Spatiotemporal Data Mining. IEEE Access
+
+License
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+
+
